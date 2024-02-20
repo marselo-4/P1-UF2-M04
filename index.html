@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pàgina</title>
+    <style>
+        a{text-decoration: none; color: black;}
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 5px;
+            text-align: right;
+            margin-top: -100px;
+            text-decoration: none;
+        }
+        li {
+            display: inline;
+        }
+
+        .portada img{
+            margin-top: 5%;
+            width: 100%;
+            height: 750px;
+
+            padding: 0;
+        }
+
+        .grid-principal{
+            display: grid;
+            grid-template-columns: auto auto;
+            width: 75%;
+            align-items: center;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            margin-left: 25%;
+        }
+
+        .grid1 img{
+            width: 200px;
+        }
+
+        .grid2 button {
+            width: 300px;
+            height: 30px;
+        }
+
+        .grid-cards {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            margin-left: 8%;
+            margin-right: auto;
+        }
+
+        .card {
+            margin-top: 5%;
+            margin-bottom: 5%;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          transition: 0.3s;
+          width: 300px;
+
+        }
+
+        .card:hover {
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        .container {
+          padding: 2px 16px;
+        }
+
+        footer {
+            margin-top: 10%;
+            margin-bottom: 5%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <li><a href="index.html"><img src="https://img.freepik.com/vector-gratis/gradiente-ilustracion-pajaro-colorido_343694-1741.jpg?w=740&t=st=1708451430~exp=1708452030~hmac=901903023dca5ef313f4e7acb03696166cc93d31f027b3133e63633bc773dd39" width="100px" alt="logo"></a></li>
+        <ul>
+            <li><a href="lorem.html">Lorum</a></li>
+            <li><a href="ipsum.html">Ipsum</a></li>
+            <li><a href="contacto.html">Sit</a></li>
+            <li><a href="#">Dolor</a></li>
+            <li><a href="#"><img src="https://static.vecteezy.com/system/resources/thumbnails/008/442/086/small/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg" width="40px" alt=""></a></li>
+        </ul>
+    </header>
+
+    <div class="portada">
+        <img src="assets/portada.avif" alt="portada">
+    </div>
+
+    <div class="grid-principal">
+        <div class="grid1">
+            <a href="ipsum.html"><img src="https://img.freepik.com/foto-gratis/ejemplo-3d-pluma-que-pone-garrapatas-azules-papel_107791-15675.jpg" alt="exemple"></a>
+        </div>
+        <div class="grid2">
+            <button>Descargar Programa</button>
+        </div>
+    </div>
+    <h1 style="text-align: center;">Lorem, ipsum dolor.</h1>
+    <div class="grid-cards">
+        <div class="card">
+            <img src="https://i0.wp.com/aldia.microjuris.com/wp-content/uploads/2016/06/shutterstock_290836448.jpg?resize=500%2C334&ssl=1" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h4><b>Lorem, ipsum</b></h4>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://i0.wp.com/aldia.microjuris.com/wp-content/uploads/2016/06/shutterstock_290836448.jpg?resize=500%2C334&ssl=1" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h4><b>Lorem, ipsum dolor</b></h4>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://i0.wp.com/aldia.microjuris.com/wp-content/uploads/2016/06/shutterstock_290836448.jpg?resize=500%2C334&ssl=1" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h4><b>Lorem ipsum dolor sit</b></h4>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h3>Lorem</h3>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, nobis est qui sed excepturi asperiores unde. Modi aliquam at excepturi?</span>
+    </footer>
+</body>
+</html>

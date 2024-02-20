@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem</title>
+    <script>
+        function enviar() {
+          alert("Se ha enviado el formulario")
+          
+        }
+    </script>
+    <style>
+        a{text-decoration: none; color: black;}
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 5px;
+            text-align: right;
+            margin-top: -100px;
+            text-decoration: none;
+        }
+        li {
+            display: inline;
+        }
+
+        .intro {
+            margin: 5%;
+        }
+
+        .grid-items2 {
+            display: grid;
+            grid-template-columns: auto auto;
+            margin: 5%;
+        }
+
+        .grid-items2 img {
+            width: 75%;
+        }
+
+        .child1 {
+            margin-right: -75px;
+        }
+        
+        .contacto{
+
+    margin: 10%;
+    }
+
+    .contacto form{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap:20px;
+    }
+
+    .contacto form label{
+      display:block;
+    }
+
+    .contacto form p{
+      margin:0;
+    }
+
+    .contacto form .full{
+      grid-column: 1 / 3;
+    }
+
+    .contacto form button, .contacto form input, .contacto form textarea{
+      width:100%;
+      padding:1em;
+      border:1px solid #ff6600a8;
+    }
+
+    .contacto form button{
+      background:#ff6600a8;
+      border:0;
+      text-transform: uppercase;
+    }
+
+    .contacto form button:hover,.contacto form button:focus{
+      background:#ff6600;
+      color:#fff;
+      outline:0;
+      transition: background-color 1s ease-out;
+    }
+
+    .alerta{
+      text-align: center;
+      padding:10px;
+      background:#79c879;
+      color:#fff;
+      margin-bottom:10px;
+      display:none;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <li><a href="index.html"><img src="https://img.freepik.com/vector-gratis/gradiente-ilustracion-pajaro-colorido_343694-1741.jpg?w=740&t=st=1708451430~exp=1708452030~hmac=901903023dca5ef313f4e7acb03696166cc93d31f027b3133e63633bc773dd39" width="100px" alt="logo"></a></li>
+        <ul>
+            <li><a href="lorem.html">Lorum</a></li>
+            <li><a href="ipsum.html">Ipsum</a></li>
+            <li><a href="contacto.html">Sit</a></li>
+            <li><a href="#">Dolor</a></li>
+            <li><a href="#"><img src="https://static.vecteezy.com/system/resources/thumbnails/008/442/086/small/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg" width="40px" alt=""></a></li>
+        </ul>
+    </header>
+
+    <div class="contacto">
+        <h3>Contactanos</h3>
+        <form id="contactoForm">
+          <p>
+            <label>Nombre</label>
+            <input type="text" name="name" id="name" required>
+          </p>
+          <p>
+            <label>Apellidos</label>
+            <input type="text" name="apellidos" id="apellidos" required>
+          </p>
+          <p>
+            <label>Email</label>
+            <input type="email" name="email" id="email" required>
+          </p>
+          <p>
+            <label>Teléfono</label>
+            <input type="text" name="telefono" id="tlf">
+          </p>
+          <p class="full">
+            <label>Mensaje</label>
+            <textarea name="mensaje" rows="5" id="mensaje"></textarea>
+          </p>
+          <p class="full">
+            <button onclick="enviar()" type="submit">Enviar</button>
+          </p>
+        </form>
+      </div>
+
+</body>
+</html>
